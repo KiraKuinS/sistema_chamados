@@ -1,4 +1,5 @@
-from src.cli import menu
+
+from src.gui import iniciar_gui
 
 if __name__ == "__main__":
-    menu()
+    iniciar_gui()
