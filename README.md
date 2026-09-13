@@ -1,41 +1,49 @@
-# 🎫 Sistema de Gestão de Chamados (CLI)
+# 🎫 Sistema de Gestão de Chamados
 
-Aplicação em linha de comando desenvolvida em Python para gerenciamento de chamados técnicos, aplicando conceitos de **Programação Orientada a Objetos (POO)**, **modularização de código (SOC)** e **persistência de dados em JSON**.
+Aplicação desktop desenvolvida em Python para gerenciamento e acompanhamento de chamados de suporte técnico, utilizando interface gráfica moderna e persistência de dados em formato JSON.
 
 ---
 
 ## 🚀 Funcionalidades
 
-- **Criação de Chamados:** Cadastro de novos tickets com título e prioridade.
-- **Listagem Geral:** Exibição organizada de todos os chamados registrados.
-- **Atualização de Status:** Alteração de status (Pendente, Em Andamento, Concluído).
-- **Busca Flexível:** Filtro por palavra-chave em título, prioridade ou status.
-- **Exclusão de Chamados:** Remoção de tickets da base de dados.
-- **Persistência de Dados:** Armazenamento automático no arquivo `data/chamados.json`.
+- **Abertura de Chamados:** Cadastro simples com definição de título e nível de prioridade (Baixa, Média, Alta).
+- **Interface Gráfica Intuitiva:** Desenvolvida com CustomTkinter para um visual moderno em modo escuro (Dark Mode).
+- **Persistência de Dados:** Armazenamento automático e estruturado das informações no arquivo `chamados.json`.
+- **Listagem Dinâmica:** Exibição imediata dos chamados cadastrados e seus respectivos status em tempo real.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Python 3.14+**
-- Módulos Nativos: `json`, `os`
+- **Linguagem:** Python 3.x
+- **GUI Framework:** CustomTkinter
+- **Persistência:** JSON
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 ```text
 sistema_chamados/
-│
 ├── data/
-│   └── chamados.json
-│
+│   └── chamados.json      # Banco de dados em formato JSON
 ├── src/
-│   ├── __init__.py
-│   ├── models.py
-│   ├── manager.py
-│   └── cli.py
-│
-├── main.py
+│   ├── gui.py             # Interface gráfica (CustomTkinter)
+│   └── manager.py         # Regra de negócio e manipulação do JSON
 ├── .gitignore
-└── README.md
+├── main.py                # Ponto de entrada da aplicação
+└── README.md              # Documentação do repositório
+⚙️ Como Executar o Projeto
+Clone o repositório:
+
+Bash
+git clone [https://github.com/KiraKuinS/sistema_chamados.git](https://github.com/KiraKuinS/sistema_chamados.git)
+cd sistema_chamados
+Instale a biblioteca CustomTkinter:
+
+Bash
+pip install customtkinter
+Inicie a aplicação:
+
+Bash
+python main.py
